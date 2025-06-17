@@ -1,4 +1,4 @@
-package com.day2.bank;
+package day2.bank;
 
 public class BankAccount {
     private String accountNumber;
@@ -11,17 +11,17 @@ public class BankAccount {
         this.balance = 0;
     }
 
-    public void deposit(double amount) throws InvalidTransactionException {
+    public void deposit(double amount) throws day2.bank.InvalidTransactionException {
         if (amount <= 0)
-            throw new InvalidTransactionException("Deposit amount must be positive.");
+            throw new day2.bank.InvalidTransactionException("Deposit amount must be positive.");
         balance += amount;
     }
 
-    public void withdraw(double amount) throws InvalidTransactionException, InsufficientFundsException {
+    public void withdraw(double amount) throws day2.bank.InvalidTransactionException, day2.bank.InsufficientFundsException {
         if (amount <= 0)
-            throw new InvalidTransactionException("Withdraw amount must be positive.");
+            throw new day2.bank.InvalidTransactionException("Withdraw amount must be positive.");
         if (amount > balance)
-            throw new InsufficientFundsException("Insufficient balance.");
+            throw new day2.bank.InsufficientFundsException("Insufficient balance.");
         balance -= amount;
     }
 
