@@ -1,4 +1,4 @@
-package com.day3task.model;
+package day3task.model;
 
 import org.bson.Document;
 import org.bson.types.ObjectId;
