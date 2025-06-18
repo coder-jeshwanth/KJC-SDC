@@ -1,8 +1,8 @@
-package day3task;
+package day3;
 
-import day3task.model.Student;
-import day3task.model.Course;
-import day3task.model.Enrollment;
+import day3.model.Student;
+import day3.model.Course;
+import day3.model.Enrollment;
 import com.day3task.util.MongoUtil;
 import com.mongodb.client.model.Updates;
 import org.bson.Document;
