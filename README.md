@@ -68,3 +68,11 @@ In the `enrollments` collection:
 
 ✅ Example code, screenshots, and documentation to be added in respective folders/files.
 
+
+![image](https://github.com/user-attachments/assets/4c60379f-5b40-4154-9819-b822002222e9)
+![image](https://github.com/user-attachments/assets/d3eedc78-1d63-48b4-a2b9-3483848f7a05)
+![image](https://github.com/user-attachments/assets/e08947d2-55b8-406e-b3d4-2abbe3455c7a)
+![image](https://github.com/user-attachments/assets/989f0934-df37-41e7-800e-0a5927357521)
+
+
+
