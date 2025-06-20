@@ -1,7 +1,9 @@
 package day5.service;
 
+import com.mongodb.client.model.Filters;
 import day5.dao.EmployeeDAO;
 import day5.model.Employee;
+import org.bson.Document;
 
 import java.time.LocalDate;
 import java.util.*;
@@ -64,4 +66,9 @@ public class EmployeeService {
     public Map<String, Long> getDepartmentStats() {
         return dao.getDepartmentStatistics();
     }
+    public boolean isEmailExists(String email) {
+        return dao.isEmailExists(email);
+    }
+
+
 }

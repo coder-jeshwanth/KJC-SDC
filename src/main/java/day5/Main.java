@@ -39,21 +39,30 @@ public class Main {
     private static void addEmployee() {
         System.out.print("Enter Name: ");
         String name = scanner.nextLine();
+
         System.out.print("Enter Email: ");
         String email = scanner.nextLine();
+
+        // Validate if email already exists
+        if (service.isEmailExists(email)) {
+            System.out.println("An employee with this email already exists.");
+            return;
+        }
+
         System.out.print("Enter Department: ");
         String department = scanner.nextLine();
+
         System.out.print("Enter Skills (comma separated): ");
         List<String> skills = Arrays.asList(scanner.nextLine().split(","));
+
         System.out.print("Enter Joining Date (yyyy-mm-dd): ");
         LocalDate date = LocalDate.parse(scanner.nextLine());
-
-
 
         Employee emp = new Employee(name, email, department, skills, date);
         boolean success = service.addEmployee(emp);
         System.out.println(success ? "Employee added successfully." : "Failed to add employee.");
     }
+
 
     private static void updateEmployee() {
         System.out.print("Enter Email of Employee to Update: ");

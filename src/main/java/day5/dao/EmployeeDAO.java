@@ -42,6 +42,12 @@ public class EmployeeDAO {
         }
     }
 
+    public boolean isEmailExists(String email) {
+        Document employee = collection.find(Filters.eq("email", email)).first();
+        return employee != null;
+    }
+
+
     // 2. Update Employee (only specified fields)
     public boolean updateEmployee(String email, Map<String, Object> updates) {
         Bson filter = Filters.eq("email", email);
