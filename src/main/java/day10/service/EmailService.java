@@ -9,7 +9,7 @@ public class EmailService {
     private static final String SMTP_HOST = "smtp.gmail.com";
     private static final int SMTP_PORT = 587;
     private static final String USERNAME = "annamalajeshwanth@gmail.com";
-    private static final String PASSWORD = "cdvt zerx krgc qtdr";
+    private static final String PASSWORD = "fuck off";
 
     public void sendRegistrationEmail(String toEmail, String password) {
         Email email = EmailBuilder.startingBlank()
